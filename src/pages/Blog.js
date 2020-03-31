@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "gatsby"
 import Layout from "../components/common/Layout"
 import SEO from "../components/seo"
 import styled from 'styled-components'
@@ -6,14 +7,16 @@ const StyledDiv = styled.div`
 height: calc(100vh - 10rem);
 margin-top: 8em;
 `
-const NotFoundPage = () => (
+const BlogPage = () => (
   <Layout>
-    <SEO title="404: Not found" />
-   	<StyledDiv>
-		 <h1>NOT FOUND</h1>
-    <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
-			</StyledDiv>
+    <SEO title="Blog" />
+		<StyledDiv>
+
+    <h1>Hi from the Blog page</h1>
+    <p>Welcome to BLOG</p>
+    <Link to="/">Go back to the homepage</Link>
+		</StyledDiv>
   </Layout>
 )
 
-export default NotFoundPage
+export default BlogPage
